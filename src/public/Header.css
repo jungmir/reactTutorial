@@ -1,0 +1,11 @@
+.Header-Wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+
+.User-area {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 1rem;
+}
