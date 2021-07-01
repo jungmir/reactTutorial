@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './public/Header'
-import Filter from './public/Filter'
+import Contents from './public/Contents'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <Filter />
+    <Contents />
   </React.StrictMode>,
   document.getElementById('root')
 );
