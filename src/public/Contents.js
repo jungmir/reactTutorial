@@ -1,5 +1,6 @@
 import Menu from '../public/Menu'
 import Card from './Card'
+import LoginModal from './LoginModal'
 import './Contents.css'
 import React from "react";
 import {
@@ -71,6 +72,7 @@ export default function Contents () {
                                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path></svg>
                                         </span>
                                     </div>
+                                    <LoginModal />
                                 </Route>
                             </Switch>
                         </li>

@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Header from './public/Header'
 import Contents from './public/Contents'
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Contents />
+    {/* <Header />
+    <Contents /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

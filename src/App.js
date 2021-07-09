@@ -1,5 +1,14 @@
 import logo from './logo.svg';
+import test_img from './ttttt.jpg'
+import ttttt from './test.jpg'
 import './App.css';
+import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
+
+const ParallaxImage = (props) => (
+    <Parallax className="custom-class" y={[props.minimum, props.maximum]} tagOuter="figure">
+        <img src={props.src} alt="asdfs" />
+    </Parallax>
+);
 
 function App() {
   return (
@@ -17,7 +26,14 @@ function App() {
         >
           Learn React
         </a>
+        <img src="../public/ttttt.jpg" alt="asdfs" />
       </header>
+      <ParallaxProvider>
+        <ParallaxImage  {...{"src" : test_img, "minimum" : 0, "maximum" : 30}}/>
+      </ParallaxProvider>
+      <ParallaxProvider>
+        <ParallaxImage {...{"src" : ttttt, "minimum" : -10, "maximum" : 50}} />
+      </ParallaxProvider>
     </div>
   );
 }
